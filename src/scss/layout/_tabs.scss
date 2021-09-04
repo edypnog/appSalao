@@ -1,0 +1,33 @@
+.tabs {
+
+    @include grid(3);
+    
+    button{
+        background-color: $white;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: $semi-bold;
+        border: none;
+        cursor: pointer;
+        padding: 0.9rem;
+        border-radius: 8px;
+
+        &.actual {
+            background-color: $blue;
+            color: $white;
+        }
+
+        &:hover{
+            opacity: 0.9;
+        }
+    }
+    @media (max-width: 500px) {
+    
+        display: flex;
+        flex-direction: column;
+    
+    }
+        
+
+}

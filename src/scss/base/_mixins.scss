@@ -1,0 +1,23 @@
+/** Media Queries **/
+@mixin cellphone {
+    @media (min-width: #{$cellphone}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: #{$tablet}) {
+        @content;
+    }
+}
+  
+@mixin desktop {
+    @media (min-width: #{$desktop}) {
+        @content;
+    }
+}
+@mixin grid($columnas) {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat($columnas, 1fr);
+}

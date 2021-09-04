@@ -1,0 +1,52 @@
+.invalidar-cita {
+    text-align: center;
+    margin: 2rem 0;
+    text-transform: uppercase;
+}
+
+.conteudo-resumo {
+    margin-bottom: 3rem 0;
+
+
+    p {
+        margin-bottom: .5rem;
+
+        span {
+            font-weight: $bold;
+            color: $blue;
+            font-size: 2.4rem;
+        }
+    }
+
+    .resumen-servicios {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 3rem;
+
+        .contenedor-servicio {
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 2px solid #43453c;
+
+
+            .precio-servicio {
+                font-size: 2.4rem;
+                font-weight: $bold;
+                color: $blue;
+            }
+
+        }
+    }
+}
+
+.total {
+    text-align: right;
+    display: grid;
+    grid-template-rows: 2rem;
+    margin-right: 2rem;
+
+    p {
+        font-size: 2.4rem;
+        font-weight: $semi-bold;
+    }
+}

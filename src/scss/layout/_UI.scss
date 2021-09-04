@@ -1,0 +1,85 @@
+body {
+    background-color: $black;
+}
+
+.contenedor-estetica {
+    
+    @include tablet {
+        height: 100vh;
+        @include grid(2)
+    }
+
+    .imagen {
+        height: 30rem;
+        background-image: url(../img/1.jpg);
+        background-size: cover;
+        background-position: center center;
+
+        @include tablet {
+            background-size: cover;
+            height: auto;
+        }
+    }
+}
+
+.app {
+    width: 95%;
+    margin: 0 auto;
+    padding-top: 3rem;
+
+    .seccion {
+        display: none;
+        margin-top: 3rem;
+    }
+}
+
+.mostrar-seccion {
+    display: block!important;
+}
+
+
+.lista-servicos {
+    
+    @include tablet {
+        @include grid(2);
+    }
+    
+    .servicio {
+        margin-bottom: 1rem;
+        background-color: $white;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 1rem;
+
+
+        .nombre-servicio {
+            color: $black;
+            text-align: center;
+            font-weight: $bold;
+            margin: 1rem;
+        }
+
+        .precio-servicio{
+            padding: 0;
+            text-align: center;
+            margin: 0;
+        }
+
+        &.seleccionado {
+            background-color: $blue;
+
+            p, h2 { color: $white;}
+        }
+
+        p {
+            margin: 0 0 2rem 0;
+        }
+
+        @include tablet {
+            margin-bottom: 0;
+        }
+    }
+}
